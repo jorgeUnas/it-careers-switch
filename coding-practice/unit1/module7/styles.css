@@ -23,7 +23,7 @@ nav ul{
     margin-bottom: 0.2em;
 }
 nav ul li{
-    background-color: aqua;
+    background-color: blue;
     padding: 1.0em;
     margin: 0.25em;
     min-width: 12%;
@@ -31,6 +31,7 @@ nav ul li{
 }
 
 nav a{
+    color: white;
     text-decoration: none;
 }
 
@@ -41,3 +42,38 @@ footer{
     border-bottom: 0.5em solid black;
     border-radius: 1.0em;
 }
+
+/*Begin Mobile*/
+
+@media screen and (max-width: 640px){
+    nav ul li{
+        border-radius: 1.0em;
+    }
+}
+
+/* End mobile*/
+
+/*Begin tablet*/
+
+@media screen and (max-width: 641px){
+    nav ul li{
+        display: inline-block;
+        border-radius: 1.0em;
+    }
+}
+
+/* End tablet*/
+
+/*Begin desktop*/
+
+@media screen and (max-width: 961px){
+    nav{
+        float: right;
+    }
+    nav ul li{
+        display: inline-block;
+        border-radius: 1.0em;
+    }
+}
+
+/* End desktop*/
