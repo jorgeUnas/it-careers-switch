@@ -2,3 +2,23 @@ header img{
     width: 100%;
     height: auto;
 }
+
+nav {
+    border-top: 0.5em solid black;
+    border-bottom: 0.5em solid black;
+    border-radius: 1.0em;
+}
+nav ul li{
+    list-style-type: none;
+}
+
+nav a{
+    text-decoration: none;
+}
+
+footer{
+    margin-top: 1.0em;
+    border-top: 0.5em solid black;
+    border-bottom: 0.5em solid black;
+    border-radius: 1.0em;
+}
