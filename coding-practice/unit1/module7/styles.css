@@ -1,0 +1,43 @@
+body {
+    background-image: linear-gradient(white, yellow);
+}
+header img{
+    width: 100%;
+    height: auto;
+    max-width: 500px;
+    
+}
+
+nav {
+    background-color: white;
+    border-top: 0.5em solid black;
+    border-bottom: 0.5em solid black;
+    border-radius: 1.0em;
+
+    font-weight: bold;
+    text-align: center;
+}
+nav ul{
+    padding: 0px;
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
+}
+nav ul li{
+    background-color: aqua;
+    padding: 1.0em;
+    margin: 0.25em;
+    min-width: 12%;
+    list-style-type: none;
+}
+
+nav a{
+    text-decoration: none;
+}
+
+footer{
+    background-color: white;
+    margin-top: 1.0em;
+    border-top: 0.5em solid black;
+    border-bottom: 0.5em solid black;
+    border-radius: 1.0em;
+}
