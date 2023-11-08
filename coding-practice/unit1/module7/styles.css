@@ -55,7 +55,7 @@ footer{
 
 /*Begin tablet*/
 
-@media screen and (max-width: 641px){
+@media screen and (min-width: 641px){
     nav ul li{
         display: inline-block;
         border-radius: 1.0em;
@@ -66,9 +66,15 @@ footer{
 
 /*Begin desktop*/
 
-@media screen and (max-width: 961px){
+@media screen and (min-width: 961px){
+    header img{
+        width: auto;
+        height: 5em;
+    }
     nav{
         float: right;
+        width: 60%;
+        margin-top: -5em;
     }
     nav ul li{
         display: inline-block;
