@@ -131,6 +131,8 @@ footer{
 @media screen and (min-width: 960px){
     header{
         text-align: left;
+        background-image: linear-gradient(to right, white, white, grey);
+
      }
     header img{
         width: auto;
