@@ -9,10 +9,11 @@ header img{
 }
 
 nav {
-    border-radius: 1.0em;
-
+   /* border-radius: 1.0em;*/
     font-weight: bold;
     text-align: center;
+    
+    
 }
 nav ul{
     padding: 0px;
@@ -20,7 +21,7 @@ nav ul{
     margin-bottom: 0.2em;
 }
 nav ul li{
-    background-color: blue;
+    background-color: black;
     padding: 1.0em;
     margin: 0.25em;
     min-width: 12%;
@@ -131,17 +132,21 @@ footer{
 @media screen and (min-width: 960px){
     header{
         text-align: left;
-        background-image: linear-gradient(to right, white, white, grey);
+        background-image: linear-gradient(to right, white, black, black, black);
 
      }
     header img{
+        margin-left: 45px;
         width: auto;
         height: 5em;
     }
     nav{
         float: right;
         width: 60%;
-        margin-top: -5em;
+        margin-top: -5.2em;
+        min-height: 75px;
+        background-color: black;
+        padding-top: 8px;
     }
     nav ul li{
         display: inline-block;
