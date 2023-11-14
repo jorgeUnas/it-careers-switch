@@ -1,0 +1,200 @@
+body {
+    background-image: linear-gradient(white, grey);
+}
+header img{
+    width: 100%;
+    height: auto;
+    max-width: 500px;
+    
+}
+
+nav {
+   /* border-radius: 1.0em;*/
+    font-weight: bold;
+    text-align: center;
+    
+    
+}
+nav ul{
+    padding: 0px;
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
+}
+nav ul li{
+    background-color: black;
+    padding: 1.0em;
+    margin: 0.25em;
+    min-width: 12%;
+    list-style-type: none;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+}
+figure {
+    text-align: center;
+    background-color: white;
+}
+figure img{
+    width: 100%;
+    max-height: 310px;
+}
+main{
+    background-image: linear-gradient(white, pink);
+    margin-top: 1.0em;
+    border-radius: 1.0em;
+    padding-left: 1em;
+    padding-right: 1em;
+    
+}
+main .row:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+main .row .column{
+    float: left;
+}
+main div .left{
+    float: left;
+    width: 15%;
+    padding: 10px;
+    
+}
+main div .right{
+    float: right;
+
+    padding: 10px;
+    
+}
+
+/*Bank holidays table begin*/
+#holidays{
+    padding: 1.5em;
+}
+#holidays table{
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 95%;
+    margin: 0px auto;
+    padding-top: 20px;
+    
+}
+#holidays caption{
+    border: 1px solid black;
+    font-size: 1.5em;
+    font-weight: bold;
+    
+}
+#holidays th, td{
+    border: 1px solid black;
+    text-align: center;
+    padding: 0.5em;
+}
+#holidays th{
+    background-color: black;
+    color: white;
+}
+/*Bank holidays table end*/
+footer{
+    background-image: linear-gradient(to right, red, orange, white, pink, blue);
+    box-shadow: 0.5em 0.5em 0.5em black;
+    text-align: center;
+    margin-top: 1.0em;
+    border-radius: 1.0em;
+    padding: 0.5em;
+}
+
+
+/*Begin Mobile*/
+
+@media screen and (max-width: 639px){
+    header{
+        text-align: center;
+     }
+    nav ul li{
+        border-radius: 1.0em;
+    }
+    .tablet{
+        display: none;
+    }
+    .desktop{
+        display: none;
+    }
+    main div .center{
+        width: 80%; 
+        padding: 10px;
+    }
+}
+
+/* End mobile*/
+
+/*Begin tablet*/
+
+@media screen and (min-width: 640px){
+    header{
+        text-align: center;
+     }
+    nav ul li{
+        display: inline-block;
+        border-radius: 1.0em;
+        box-shadow: 0.5em 0.5em 0.5em black;
+    }
+    figure{
+        box-shadow: 0.5em 0.5em 0.5em black;
+    }
+    main{
+        box-shadow: 0.5em 0.5em 0.5em black;
+    }
+    .desktop {
+        display: none;
+    }
+    main div .center{
+        width: 55%;
+        padding: 10px;
+        border-right: 3px solid black;
+    }
+}
+
+/* End tablet*/
+
+/*Begin desktop*/
+
+@media screen and (min-width: 960px){
+    header{
+        text-align: left;
+        background-image: linear-gradient(to right, white, black, black, black);
+        box-shadow: 0.5em 0.5em 0.5em black;
+     }
+    header img{
+        margin-left: 45px;
+        width: auto;
+        height: 5em;
+    }
+    nav{
+        float: right;
+        width: 60%;
+        margin-top: -5.2em;
+        min-height: 75px;
+        background-color: black;
+        padding-top: 8px;
+    }
+    nav ul li{
+        display: inline-block;
+        border-radius: 1.0em;
+        
+    }
+    .desktop {
+        display: block;
+    }
+    main div .center{
+        width: 65%;
+        padding: 10px;
+        border-right: 3px solid black;
+        border-left: 3px solid black;
+    
+    }
+}
+
+/* End desktop*/
