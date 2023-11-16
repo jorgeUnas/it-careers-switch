@@ -5,6 +5,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width-device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styles.css" type="text/css" />
+
     </head>
     <body>
         <header>
@@ -65,7 +66,7 @@
                     <td><input type="number" id="uniforms" min="0" value="0"></td>
                 </tr>
             </table>
-            <input type="submit" id="submit" value="Submit"><br>
+            <input type="submit" id="submit" value="Submit" onclick="calculateEnrollPrice()"><br>
             <input type="reset" id="reset" value="Reset">
          </main>
         <footer>
@@ -76,7 +77,31 @@
                 <a href="mailto:jorgeunas@gmail.com">jorgeunas@gmail.com</a>
             </p>
         </footer>
-        <script type="text/javascript" src=""></script>
+        <script type="text/javascript">
+            var ticketPrice = 0;
+            var total = 0
+            const adult = document.querySelector('#adult');
+            const teen = document.querySelector('#teen');
+            const child = document.querySelector('#child');
+            
+            
+
+            function calculateEnrollPrice(){
+                if(adult.checked){
+                    ticketPrice = +adult.value;
+                }else if (teen.checked){
+                    ticketPrice = +teen.value;
+                }else if (child.checked){
+                    ticketPrice = +child.value;
+                };
+                let unifPrice = 50*document.querySelector('#uniforms').value;
+                //console.log(unifPrice);
+                total = unifPrice + ticketPrice;
+           
+                alert(total);
+            };
+
+        </script>
     </body>
    
 </html>
