@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Home</title>
+        <title>Variables</title>
         <meta charset="utf-8">
         <link rel="stylesheet" href="styles.css" type="text/css" />
         <script type="text/javascript">
             function enter(){
-                alert('test');
+                var aNumber = 1;
+                let aString = '1';
+                const aBoolean = true;
+
+                // aBoolean = false; // constants don't vary
+                alert(aBoolean);
             };
         </script>
     </head>
@@ -16,7 +21,7 @@
             <a href="datatypes.html">data types</a>
             <a href="globalMethods.html">Global Methods</a>
             <a href="variables.html">Variables</a>
-        </nav> 
+        </nav>
         <br>
         <main>
             <button type="submit" id="submit" value="submit" onclick="enter()">Submit</button>
