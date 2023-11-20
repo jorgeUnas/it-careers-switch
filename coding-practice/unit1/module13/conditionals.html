@@ -1,15 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Data types</title>
+        <title>Conditionals</title>
         <meta charset="utf-8">
         <link rel="stylesheet" href="styles.css" type="text/css" />
         <script type="text/javascript">
             function enter(){
                 var aNumber = 1;
-                var aString = '1';
-                var aBoolean = true;
-                alert(aString + aBoolean);
+                let aString = '1';
+                const aBoolean = true;
+
+                // aBoolean = false; // constants don't vary
+
+                if (aBoolean){
+                    alert('First conditional is true');
+                }else{
+                    alert('First conditional is false');
+                }
+
+                let otherBoolean = false;
+                if(otherBoolean){
+                    alert('Second conditional is true');
+                }else if (aBoolean){
+                    alert('second conditional is false');
+                }
             };
         </script>
     </head>
