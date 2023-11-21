@@ -6,7 +6,7 @@
         <meta name="viewport" content="width-device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styles.css" type="text/css" />
         <link rel="stylesheet" href="calculator.css" type="text/css" />
-
+        <script type="text/javascript" src="calculator.js"></script>
     </head>
     <body>
         <header>
@@ -27,16 +27,11 @@
         <main>
             <table class="enroll">
                 <caption><input type="text" id="result" value=0 readonly></caption>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
+                
                 <tr>
                     <td><input id="allclear" type="button" value="ac" onclick="allClear()"></td>
                     <td><input id="square" type="button" value="x&sup2;" onclick="square()"></td>
-                    <td><input id="percentage" type="button" value="&percnt;" onclick="Percent()"></td>
+                    <td><input id="percentage" type="button" value="&percnt;" onclick="percent()"></td>
                     <td><input id="divide" type="button" value="&divide;" onclick="operators(4)"></td>
                 </tr>
                 <tr>
@@ -74,9 +69,7 @@
                 <a href="mailto:jorgeunas@gmail.com">jorgeunas@gmail.com</a>
             </p>
         </footer>
-        <script type="text/javascript">
-            
-        </script>
+        
     </body>
    
 </html>
