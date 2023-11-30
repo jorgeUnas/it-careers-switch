@@ -9,7 +9,7 @@ function equivalentCheck(){
 function input(x) {
     equivalentCheck()
 
-    let y = document.querySelector('#result').value;
+    /*let y = document.querySelector('#result').value;
     if(document.querySelector('#decimalVal').value == 0){
         x += y*10; // multiply text input by 10 and add x
         document.querySelector('#result').value = x;
@@ -24,12 +24,12 @@ function input(x) {
         }
         decimalCount++;
         document.querySelector('#decimalVal').value = decimalCount;
-    }
-    /*if(document.querySelector('#result').value == 0){
+    }*/
+    if(document.querySelector('#result').value == 0){
         return document.querySelector('#result').value = x;
     }else{
         return document.querySelector('#result').value += x;
-    }*/
+    }
 }
 function allClear(){
     document.querySelector('#result').value = 0;
